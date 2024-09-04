@@ -1,0 +1,30 @@
+exercise:упражнение
+fitness:фитнес
+workout:тренировка
+gym:спортзал
+yoga:йога
+pilates:пилатес
+stretching:растяжка
+cardio:кардио
+strength:сила
+endurance:выносливость
+flexibility:гибкость
+balance:баланс
+aerobics:аэробика
+running:бег
+jogging:пробежка
+swimming:плавание
+cycling:велоспорт
+weightlifting:тяжелая атлетика
+dumbbell:гантель
+barbell:штанга
+treadmill:беговая дорожка
+elliptical:эллиптический тренажер
+squat:приседание
+push-up:отжимание
+sit-up:скручивание
+plank:планка
+stretch:растяжка
+warm-up:разминка
+cool-down:заминка
+trainer:тренер

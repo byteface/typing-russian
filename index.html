@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇷🇺 Russian Touch Typing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .word {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .timer, .score {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        input {
+            font-size: 20px;
+            padding: 10px;
+            width: 80%;
+        }
+        select {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        col {
+            flex-direction: column; 
+            align-items: flex-start;
+        }
+
+        /* Keyboard */
+
+        .keyboard {
+            display: inline-block;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .key {
+            display: inline-block;
+            padding: 15px;
+            margin: 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            user-select: none;
+        }
+
+        .key:active, .key.highlight {
+            background-color: #b0c4de;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="col">
+
+        <div class="container">
+            <h1>🇷🇺 Russian Touch Typing Game</h1>
+            <p>Learn new Russian words while typing!</p>
+        </div>
+
+        <div class="container">
+            <div>
+                <label for="level-select">Select Level: </label>
+                <select id="level-select">
+                    <option value="level1.txt">Level 1: Warmup</option>
+                    <option value="level2.txt">Level 2: Random words</option>
+                    <option value="level3.txt">Level 3: Random words</option>
+                    <option value="level4.txt">Level 4: Common Verbs</option>
+                    <option value="level5.txt">Level 5: Household Items</option>
+                    <option value="level6.txt">Level 6: Food and Drink</option>
+                    <option value="level7.txt">Level 7: Nature and Environment</option>
+                    <option value="level8.txt">Level 8: Professions and Occupations</option>
+                    <option value="level9.txt">Level 9: Body Parts</option>
+                    <option value="level10.txt">Level 10: Clothing</option>
+                    <option value="level11.txt">Level 11: Emotions and Feelings</option>
+                    <option value="level12.txt">Level 12: Transportation</option>
+                    <option value="level13.txt">Level 13: Technology and Electronics</option>
+                    <option value="level14.txt">Level 14: Animals</option>
+                    <option value="level15.txt">Level 15: School and Education</option>
+                    <option value="level16.txt">Level 16: Health and Medicine</option>
+                    <option value="level17.txt">Level 17: Travel and Tourism</option>
+                    <option value="level18.txt">Level 18: Hobbies and Interests</option>
+                    <option value="level19.txt">Level 19: Occupations</option>
+                    <option value="level20.txt">Level 20: Nature</option>
+                    <option value="level21.txt">Level 21: Food and Drink</option>
+                    <option value="level22.txt">Level 22: Household Items</option>
+                    <option value="level23.txt">Level 23: Shopping</option>
+                    <option value="level24.txt">Level 23: Weather</option>
+                    <option value="level25.txt">Level 25: Colours</option>
+                    <option value="level26.txt">Level 26: Geography and Landmarks</option>
+                    <option value="level27.txt">Level 27: Sports and Recreation</option>
+                    <option value="level28.txt">Level 28: Art and Literature</option>
+                    <option value="level29.txt">Level 29: Musical Instruments</option>
+                    <option value="level30.txt">Level 30: Science and Mathematics</option>
+                    <option value="level31.txt">Level 31: Holidays and Celebrations</option>
+                    <option value="level32.txt">Level 32: Daily Activities</option>
+                    <option value="level33.txt">Level 33: Places and Buildings</option>
+                    <option value="level34.txt">Level 34: Materials and Textures</option>
+                    <option value="level35.txt">Level 35: Cooking and Kitchen</option>
+                    <option value="level36.txt">Level 36: Astronomy and Space</option>
+                    <option value="level37.txt">Level 37: Family and Relationships</option>
+                    <option value="level38.txt">Level 38: Gardening and Agriculture</option>
+                    <option value="level38.txt">Level 39: Furniture and Interior Design</option>
+                    <option value="level40.txt">Level 40: Personal Care and Hygiene</option>
+                    <option value="level41.txt">Level 41: Legal and Government</option>
+                    <option value="level42.txt">Level 42: Historical Terms</option>
+                    <option value="level43.txt">Level 43: Finance and Business</option>
+                    <option value="level44.txt">Level 44: Religion and Spirituality</option>
+                    <option value="level45.txt">Level 45: Social Media and Communication</option>
+                    <option value="level46.txt">Level 46: Emergency and Safety</option>
+                    <option value="level47.txt">Level 47: Events and Gatherings</option>
+                    <option value="level48.txt">Level 48: Fitness and Exercise</option>
+                    <option value="level49.txt">Level 49: Culinary Arts</option>
+                    <option value="level50.txt">Level 50: Arts and Crafts</option>
+                    <!-- <option value="level51.txt">Level 51: Numbers and Numerals</option>
+                    <option value="level52.txt">Level 52: Quantities and Measurements</option>
+                    <option value="level53.txt">Level 53: Mathematics</option> -->
+                    <!-- Add more levels here -->
+                    <option value="level51.txt">Level 51: Phrases</option>
+                    <option value="level52.txt">Level 52: Quotes</option>
+                </select>
+            </div>
+            <div class="timer">Time left: <span id="time">60</span>s</div>
+            <div class="score">Score: <span id="score">0</span></div>
+            <div class="word">
+                <span id="russian-word"></span> - <span id="english-word"></span>
+                <!-- <span class="sound-icon" id="soundIcon">🔊</span> -->
+            </div>
+            <input type="text" id="input" placeholder="Start typing..." disabled autofocus>
+        </div>
+
+
+        <div class="container">
+
+            <div class="keyboard">
+                <div class="row">
+                    <div class="key" data-char="й">й</div>
+                    <div class="key" data-char="ц">ц</div>
+                    <div class="key" data-char="у">у</div>
+                    <div class="key" data-char="к">к</div>
+                    <div class="key" data-char="е">е</div>
+                    <div class="key" data-char="н">н</div>
+                    <div class="key" data-char="г">г</div>
+                    <div class="key" data-char="ш">ш</div>
+                    <div class="key" data-char="щ">щ</div>
+                    <div class="key" data-char="з">з</div>
+                    <div class="key" data-char="х">х</div>
+                    <div class="key" data-char="ъ">ъ</div>
+                </div>
+                <div class="row">
+                    <div class="key" data-char="ф">ф</div>
+                    <div class="key" data-char="ы">ы</div>
+                    <div class="key" data-char="в">в</div>
+                    <div class="key" data-char="а">а</div>
+                    <div class="key" data-char="п">п</div>
+                    <div class="key" data-char="р">р</div>
+                    <div class="key" data-char="о">о</div>
+                    <div class="key" data-char="л">л</div>
+                    <div class="key" data-char="д">д</div>
+                    <div class="key" data-char="ж">ж</div>
+                    <div class="key" data-char="э">э</div>
+                </div>
+                <div class="row">
+                    <div class="key" data-char="я">я</div>
+                    <div class="key" data-char="ч">ч</div>
+                    <div class="key" data-char="с">с</div>
+                    <div class="key" data-char="м">м</div>
+                    <div class="key" data-char="и">и</div>
+                    <div class="key" data-char="т">т</div>
+                    <div class="key" data-char="ь">ь</div>
+                    <div class="key" data-char="б">б</div>
+                    <div class="key" data-char="ю">ю</div>
+                    <div class="key" data-char=".">.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+
+        const timerElement = document.getElementById('time');
+        const scoreElement = document.getElementById('score');
+        const russianWordElement = document.getElementById('russian-word');
+        const englishWordElement = document.getElementById('english-word');
+        const inputElement = document.getElementById('input');
+        const levelSelect = document.getElementById('level-select');
+        let wordsData = {};
+        let words = [];
+        let currentWordIndex = 0;
+        let score = 0;
+        let timeLeft = 60;
+        let timer;
+
+        async function loadWords(level) {
+            try {
+                const response = await fetch(level);
+                const text = await response.text();
+                wordsData = {};
+                text.split('\n').forEach(line => {
+                    const [english, russian] = line.split(':');
+                    if (english && russian) {
+                        wordsData[english.trim()] = russian.trim();
+                    }
+                });
+                words = Object.keys(wordsData);
+                startGame();
+            } catch (error) {
+                console.error('Error loading words:', error);
+            }
+        }
+
+        function startGame() {
+            score = 0;
+            timeLeft = 600;
+            scoreElement.textContent = score;
+            timerElement.textContent = timeLeft;
+            inputElement.disabled = false;
+            inputElement.value = '';
+            inputElement.focus();
+            timer = setInterval(updateTimer, 1000);
+            showNextWord();
+        }
+
+        function updateTimer() {
+            timeLeft--;
+            timerElement.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                inputElement.disabled = true;
+                alert('Time is up! Your score is ' + score);
+            }
+        }
+
+        function showNextWord() {
+            currentWordIndex = Math.floor(Math.random() * words.length);
+            const englishWord = words[currentWordIndex];
+            const russianWord = wordsData[englishWord];
+            russianWordElement.textContent = russianWord;
+            englishWordElement.textContent = englishWord;
+            speakWord(russianWord);
+            inputElement.value = '';
+        }
+
+        function speakWord(word) {
+            // console.log('speakWord!')
+            const utterance = new SpeechSynthesisUtterance(word);
+            utterance.lang = 'ru-RU';
+            window.speechSynthesis.speak(utterance);
+        }
+
+        inputElement.addEventListener('input', () => {
+            const typedValue = inputElement.value.trim();
+            const currentEnglishWord = words[currentWordIndex];
+            const currentRussianWord = wordsData[currentEnglishWord];
+            if (typedValue === currentRussianWord) {
+                score++;
+                scoreElement.textContent = score;
+                showNextWord();
+            }
+        });
+
+        levelSelect.addEventListener('change', () => {
+            if (timer) clearInterval(timer);
+            inputElement.disabled = true;
+            loadWords(levelSelect.value);
+
+            window.location.hash = `level ${levelSelect.value.split('.')[0].replace('level', '')}`;
+        });
+
+
+        // if the url hash has a level option set
+        const hash = decodeURIComponent(window.location.hash.substr(1)).toLowerCase(); // Remove the '#'
+        // console.log("hurray!")
+        console.log(hash)
+        if (hash) {
+            for (let i = 0; i < levelSelect.options.length; i++) {
+                const optionText = levelSelect.options[i].textContent.trim().toLowerCase();
+                // Find the position of colon
+                const colonIndex = optionText.indexOf(':');
+                // Compare option text before colon with hash
+                const optionTextBeforeColon = optionText.substring(0, colonIndex).trim();
+                
+                window.console.log(optionTextBeforeColon , hash)
+                if (optionTextBeforeColon === hash) {
+                    levelSelect.selectedIndex = i;
+                    break;
+                }
+            }
+        }
+
+        // Load initial level
+        loadWords(levelSelect.value);
+
+
+        // keyboard --------
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const keys = document.querySelectorAll('.key');
+
+            keys.forEach(key => {
+                key.addEventListener('mousedown', () => {
+                    key.classList.add('highlight');
+                });
+
+                key.addEventListener('mouseup', () => {
+                    key.classList.remove('highlight');
+                });
+
+                key.addEventListener('mouseleave', () => {
+                    key.classList.remove('highlight');
+                });
+            });
+
+
+            const keyMap = {
+                'й': 'q', 'ц': 'w', 'у': 'e', 'к': 'r', 'е': 't', 'н': 'y', 'г': 'u', 'ш': 'i', 'щ': 'o', 'з': 'p', 'х': '[', 'ъ': ']',
+                'ф': 'a', 'ы': 's', 'в': 'd', 'а': 'f', 'п': 'g', 'р': 'h', 'о': 'j', 'л': 'k', 'д': 'l', 'ж': ';', 'э': '\'',
+                'я': 'z', 'ч': 'x', 'с': 'c', 'м': 'v', 'и': 'b', 'т': 'n', 'ь': 'm', 'б': ',', 'ю': '.', '.': '/'
+            };
+
+            // Highlight key on virtual keyboard
+            function highlightKey(char) {
+                keys.forEach(key => {
+                    if (key.dataset.char === char) {
+                        key.classList.add('highlight');
+                    }
+                });
+            }
+
+            // Remove highlight from all keys
+            function removeHighlight() {
+                keys.forEach(key => {
+                    key.classList.remove('highlight');
+                });
+            }
+
+            // Map physical key press to virtual keyboard key
+            document.addEventListener('keydown', (event) => {
+                removeHighlight();
+                const keyChar = Object.keys(keyMap).find(key => keyMap[key] === event.key);
+                if (keyChar) {
+                    highlightKey(keyChar);
+                }
+            });
+
+            document.addEventListener('keyup', () => {
+                removeHighlight();
+            });
+
+    });
+</script>
+
+</body>
+</html>

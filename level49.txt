@@ -1,0 +1,31 @@
+cooking:готовка
+baking:выпечка
+roasting:жарка
+grilling:гриль
+boiling:кипячение
+steaming:парение
+frying:жарка
+sauteing:тушение
+simmering:тушение
+stir-frying:жарка с перемешиванием
+chopping:нарезка
+slicing:нарезка
+dicing:нарезка кубиками
+mincing:измельчение
+grating:терка
+peeling:очистка
+mixing:смешивание
+whisking:взбивание
+kneading:замешивание
+rolling:раскатывание
+folding:складывание
+marinating:маринование
+seasoning:приправа
+spice:специя
+herb:трава
+utensil:посуда
+knife:нож
+cutting board:доска для резки
+pan:сковорода
+pot:кастрюля
+oven:духовка

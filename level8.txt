@@ -1,0 +1,56 @@
+doctor:доктор
+nurse:медсестра
+teacher:учитель
+professor:профессор
+engineer:инженер
+scientist:ученый
+lawyer:адвокат
+judge:судья
+police officer:полицейский
+firefighter:пожарный
+soldier:солдат
+pilot:пилот
+driver:водитель
+chef:шеф-повар
+cook:повар
+waiter:официант
+waitress:официантка
+bartender:бармен
+artist:художник
+painter:маляр
+musician:музыкант
+singer:певец
+dancer:танцор
+actor:актер
+actress:актриса
+writer:писатель
+journalist:журналист
+photographer:фотограф
+director:режиссер
+producer:продюсер
+designer:дизайнер
+architect:архитектор
+builder:строитель
+electrician:электрик
+plumber:сантехник
+mechanic:механик
+technician:техник
+scientist:ученый
+researcher:исследователь
+pharmacist:фармацевт
+dentist:стоматолог
+veterinarian:ветеринар
+psychologist:психолог
+psychiatrist:психиатр
+social worker:социальный работник
+librarian:библиотекарь
+accountant:бухгалтер
+banker:банкир
+real estate agent:риэлтор
+salesperson:продавец
+cashier:кассир
+manager:менеджер
+secretary:секретарь
+receptionist:администратор
+cleaner:уборщик
+security guard:охранник

@@ -1,0 +1,30 @@
+soap:мыло
+shampoo:шампунь
+conditioner:кондиционер
+toothpaste:зубная паста
+toothbrush:зубная щетка
+towel:полотенце
+comb:гребень
+brush:щетка
+razor:бритва
+shaving cream:крем для бритья
+deodorant:дезодорант
+perfume:духи
+lotion:лосьон
+sunscreen:солнцезащитный крем
+hand sanitizer:антисептик для рук
+nail clipper:ножницы для ногтей
+scissors:ножницы
+cotton swab:ватная палочка
+bath:ванна
+shower:душ
+bathrobe:халат
+hair dryer:фен
+mirror:зеркало
+toilet:туалет
+toilet paper:туалетная бумага
+brush:щетка
+makeup:макияж
+shave:брить
+clean:чистить
+groom:ухаживать

@@ -1,0 +1,46 @@
+computer:компьютер
+laptop:ноутбук
+tablet:планшет
+smartphone:смартфон
+camera:камера
+printer:принтер
+scanner:сканер
+monitor:монитор
+keyboard:клавиатура
+mouse:мышь
+charger:зарядное устройство
+battery:батарея
+television:телевизор
+radio:радио
+headphones:наушники
+speaker:динамик
+microphone:микрофон
+remote control:пульт
+usb drive:флешка
+hard drive:жесткий диск
+router:роутер
+modem:модем
+projector:проектор
+game console:игровая приставка
+joystick:джойстик
+drone:дрон
+smartwatch:умные часы
+fitness tracker:фитнес трекер
+e-reader:электронная книга
+vr headset:vr гарнитура
+3d printer:3d принтер
+bluetooth:блютуз
+wi-fi:вайфай
+internet:интернет
+website:вебсайт
+email:электронная почта
+software:программное обеспечение
+app:приложение
+file:файл
+folder:папка
+cloud:облако
+data:данные
+network:сеть
+database:база данных
+server:сервер
+firewall:брандмауэр

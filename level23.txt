@@ -1,0 +1,48 @@
+shop:магазин
+store:магазин
+supermarket:супермаркет
+market:рынок
+mall:торговый центр
+boutique:бутик
+bakery:пекарня
+butcher:мясник
+pharmacy:аптека
+grocery:продуктовый магазин
+checkout:касса
+cash register:кассовый аппарат
+cashier:кассир
+customer:покупатель
+price:цена
+discount:скидка
+sale:распродажа
+receipt:квитанция
+bag:сумка
+cart:тележка
+basket:корзина
+aisle:проход
+shelf:полка
+stock:ассортимент
+item:предмет
+product:продукт
+brand:бренд
+label:этикетка
+barcode:штрих-код
+money:деньги
+cash:наличные
+credit card:кредитная карта
+debit card:дебетовая карта
+wallet:кошелек
+purse:сумочка
+change:сдача
+coin:монета
+bill:банкнота
+price tag:ценник
+size:размер
+color:цвет
+fitting room:примерочная
+try on:примерить
+purchase:покупка
+refund:возврат
+exchange:обмен
+warranty:гарантия
+quality:качество

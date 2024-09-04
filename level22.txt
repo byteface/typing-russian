@@ -1,0 +1,52 @@
+chair:стул
+table:стол
+sofa:диван
+bed:кровать
+pillow:подушка
+blanket:одеяло
+sheet:простыня
+mattress:матрас
+lamp:лампа
+light:свет
+bulb:лампочка
+fan:вентилятор
+heater:обогреватель
+air conditioner:кондиционер
+fridge:холодильник
+freezer:морозильник
+microwave:микроволновка
+oven:духовка
+stove:плита
+sink:раковина
+faucet:кран
+bathtub:ванна
+shower:душ
+toilet:туалет
+mirror:зеркало
+drawer:выдвижной ящик
+wardrobe:гардероб
+closet:шкаф
+shelf:полка
+cupboard:шкаф
+broom:метла
+mop:швабра
+vacuum cleaner:пылесос
+washing machine:стиральная машина
+dryer:сушилка
+iron:утюг
+ironing board:гладильная доска
+washing powder:стиральный порошок
+dishwasher:посудомоечная машина
+toaster:тостер
+kettle:чайник
+blender:блендер
+knife:нож
+fork:вилка
+spoon:ложка
+plate:тарелка
+bowl:миска
+cup:чашка
+glass:стакан
+bottle:бутылка
+can opener:открывалка для консервов
+corkscrew:штопор

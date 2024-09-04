@@ -1,0 +1,46 @@
+weather:погода
+sunny:солнечный
+cloudy:облачный
+rainy:дождливый
+stormy:штормовой
+snowy:снежный
+windy:ветреный
+foggy:туманный
+humid:влажный
+dry:сухой
+hot:жаркий
+warm:теплый
+cool:прохладный
+cold:холодный
+freezing:морозный
+breezy:ветреный
+thunderstorm:гроза
+lightning:молния
+hail:град
+drizzle:морось
+shower:ливень
+downpour:проливной дождь
+flood:наводнение
+drought:засуха
+heatwave:жара
+blizzard:метель
+frost:иней
+ice:лед
+dew:роса
+rainbow:радуга
+overcast:пасмурно
+mist:дымка
+clear:ясный
+gust:порыв ветра
+sleet:дождь со снегом
+hailstorm:град
+cyclone:циклон
+tornado:торнадо
+hurricane:ураган
+typhoon:тайфун
+monsoon:муссон
+avalanche:лавина
+fog:туман
+smog:смог
+gale:штормовой ветер
+thaw:оттепель

@@ -1,0 +1,30 @@
+emergency:чрезвычайная ситуация
+safety:безопасность
+accident:авария
+fire:пожар
+police:полиция
+ambulance:скорая помощь
+doctor:врач
+hospital:больница
+injury:травма
+rescue:спасение
+danger:опасность
+warning:предупреждение
+first aid:первая помощь
+CPR:искусственное дыхание
+extinguisher:огнетушитель
+escape:спасаться
+shelter:убежище
+emergency exit:аварийный выход
+paramedic:фельдшер
+hazard:опасность
+alarm:сигнализация
+evacuation:эвакуация
+survival:выживание
+precaution:предосторожность
+lifeguard:спасатель
+lockdown:карантин
+quarantine:карантин
+emergency number:экстренный номер
+aid:помощь
+relief:облегчение

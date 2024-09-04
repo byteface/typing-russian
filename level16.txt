@@ -1,0 +1,50 @@
+doctor:доктор
+nurse:медсестра
+patient:пациент
+hospital:больница
+clinic:клиника
+medicine:лекарство
+pill:таблетка
+injection:инъекция
+vaccine:вакцина
+syringe:шприц
+bandage:бинт
+plaster:пластырь
+thermometer:термометр
+stethoscope:стетоскоп
+blood pressure:кровяное давление
+heart rate:пульс
+temperature:температура
+symptom:симптом
+disease:болезнь
+illness:заболевание
+infection:инфекция
+virus:вирус
+bacteria:бактерия
+allergy:аллергия
+pain:боль
+fever:жар
+cough:кашель
+cold:простуда
+flu:грипп
+headache:головная боль
+stomachache:боль в животе
+toothache:зубная боль
+backache:боль в спине
+fracture:перелом
+bruise:синяк
+wound:рана
+cut:порез
+burn:ожог
+rash:сыпь
+clinic:клиника
+emergency:скорая помощь
+ambulance:скорая
+surgery:операция
+dentist:стоматолог
+optometrist:окулист
+pharmacy:аптека
+prescription:рецепт
+treatment:лечение
+recovery:выздоровление
+health:здоровье

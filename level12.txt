@@ -1,0 +1,45 @@
+car:машина
+bus:автобус
+train:поезд
+plane:самолет
+bicycle:велосипед
+motorcycle:мотоцикл
+boat:лодка
+ship:корабль
+subway:метро
+taxi:такси
+truck:грузовик
+tram:трамвай
+scooter:скутер
+helicopter:вертолет
+rocket:ракета
+ferry:паром
+van:фургон
+jeep:джип
+sedan:седан
+convertible:кабриолет
+wagon:фургон
+yacht:яхта
+canoe:каноэ
+kayak:каяк
+moped:мопед
+skateboard:скейтборд
+rollerblades:ролики
+spaceship:космический корабль
+ambulance:скорая помощь
+police car:полицейская машина
+fire truck:пожарная машина
+limousine:лимузин
+submarine:подводная лодка
+hot air balloon:воздушный шар
+hoverboard:ховерборд
+gondola:гондола
+rickshaw:рикша
+sailboat:парусник
+caravan:караван
+segway:сегвей
+train station:вокзал
+airport:аэропорт
+bus stop:автобусная остановка
+harbor:гавань
+dock:док

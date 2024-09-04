@@ -1,0 +1,49 @@
+vacation:отпуск
+trip:поездка
+travel:путешествие
+tour:тур
+tourist:турист
+passport:паспорт
+visa:виза
+ticket:билет
+flight:рейс
+hotel:отель
+reservation:бронирование
+luggage:багаж
+suitcase:чемодан
+backpack:рюкзак
+map:карта
+guide:гид
+guidebook:путеводитель
+souvenir:сувенир
+beach:пляж
+mountain:гора
+city:город
+countryside:деревня
+island:остров
+adventure:приключение
+cruise:круиз
+tourist attraction:достопримечательность
+museum:музей
+monument:памятник
+sightseeing:осмотр достопримечательностей
+local cuisine:местная кухня
+restaurant:ресторан
+cafe:кафе
+bar:бар
+nightclub:ночной клуб
+shopping:шоппинг
+market:рынок
+mall:торговый центр
+currency:валюта
+exchange rate:обменный курс
+language:язык
+customs:таможня
+immigration:иммиграция
+security:безопасность
+emergency:чрезвычайная ситуация
+embassy:посольство
+consulate:консульство
+culture:культура
+history:история
+festival:фестиваль

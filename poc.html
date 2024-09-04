@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Touch Typing Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .word {
+            font-size: 24px;
+            margin: 20px 0;
+        }
+        .timer, .score {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        input {
+            font-size: 20px;
+            padding: 10px;
+            width: 80%;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="timer">Time left: <span id="time">60</span>s</div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="word">
+            <span id="russian-word"></span> - <span id="english-word"></span>
+        </div>
+        <input type="text" id="input" placeholder="Start typing..." autofocus>
+        <div class="hidden" id="words-data">
+            <!-- JSON data of words (hidden) -->
+            {
+                "hello": "привет",
+                "world": "мир",
+                "friend": "друг",
+                "love": "любовь",
+                "peace": "мир",
+                "sun": "солнце",
+                "moon": "луна",
+                "star": "звезда",
+                "sky": "небо",
+                "water": "вода"
+            }
+        </div>
+    </div>
+
+    <script>
+        const timerElement = document.getElementById('time');
+        const scoreElement = document.getElementById('score');
+        const russianWordElement = document.getElementById('russian-word');
+        const englishWordElement = document.getElementById('english-word');
+        const inputElement = document.getElementById('input');
+        const wordsDataElement = document.getElementById('words-data');
+        const wordsData = JSON.parse(wordsDataElement.textContent);
+        const words = Object.keys(wordsData);
+
+        let currentWordIndex = 0;
+        let score = 0;
+        let timeLeft = 60;
+        let timer;
+
+        function startGame() {
+            timer = setInterval(updateTimer, 1000);
+            showNextWord();
+        }
+
+        function updateTimer() {
+            timeLeft--;
+            timerElement.textContent = timeLeft;
+            if (timeLeft <= 0) {
+                clearInterval(timer);
+                inputElement.disabled = true;
+                alert('Time is up! Your score is ' + score);
+            }
+        }
+
+        function showNextWord() {
+            currentWordIndex = Math.floor(Math.random() * words.length);
+            const englishWord = words[currentWordIndex];
+            const russianWord = wordsData[englishWord];
+            russianWordElement.textContent = russianWord;
+            englishWordElement.textContent = englishWord;
+            inputElement.value = '';
+        }
+
+        inputElement.addEventListener('input', () => {
+            const typedValue = inputElement.value.trim();
+            const currentEnglishWord = words[currentWordIndex];
+            const currentRussianWord = wordsData[currentEnglishWord];
+            if (typedValue === currentRussianWord) {
+                score++;
+                scoreElement.textContent = score;
+                showNextWord();
+            }
+        });
+
+        inputElement.addEventListener('focus', () => {
+            if (timeLeft === 60) {
+                startGame();
+            }
+        });
+
+        inputElement.focus();
+    </script>
+</body>
+</html>

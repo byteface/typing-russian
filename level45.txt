@@ -1,0 +1,30 @@
+social media:социальные сети
+internet:интернет
+website:веб-сайт
+blog:блог
+vlog:влог
+post:пост
+comment:комментарий
+like:лайк
+share:поделиться
+follow:следовать
+follower:подписчик
+message:сообщение
+chat:чат
+emoji:эмодзи
+hashtag:хэштег
+viral:вирусный
+trending:трендовый
+profile:профиль
+username:имя пользователя
+password:пароль
+notification:уведомление
+privacy:конфиденциальность
+security:безопасность
+account:аккаунт
+login:вход
+logout:выход
+upload:загрузить
+download:скачать
+stream:стрим
+subscribe:подписаться

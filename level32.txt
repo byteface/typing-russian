@@ -1,0 +1,30 @@
+wake up:просыпаться
+brush teeth:чистить зубы
+take a shower:принимать душ
+get dressed:одеваться
+have breakfast:завтракать
+go to work:идти на работу
+study:учиться
+exercise:заниматься спортом
+cook:готовить
+eat:есть
+read:читать
+watch TV:смотреть телевизор
+listen to music:слушать музыку
+go for a walk:гулять
+work:работать
+clean:убираться
+shop:делать покупки
+drive:водить машину
+relax:расслабляться
+sleep:спать
+make a call:звонить
+send an email:отправлять электронное письмо
+write:писать
+draw:рисовать
+play:играть
+meet friends:встречаться с друзьями
+do laundry:стирать белье
+do dishes:мыть посуду
+take a nap:вздремнуть
+go to bed:ложиться спать

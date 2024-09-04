@@ -1,0 +1,31 @@
+event:мероприятие
+gathering:собрание
+party:вечеринка
+wedding:свадьба
+birthday:день рождения
+anniversary:годовщина
+festival:фестиваль
+concert:концерт
+ceremony:церемония
+meeting:встреча
+conference:конференция
+workshop:семинар
+seminar:семинар
+exhibition:выставка
+fair:ярмарка
+parade:парад
+celebration:праздник
+banquet:банкет
+reunion:воссоединение
+fundraiser:благотворительный вечер
+ball:бал
+gala:гала-вечер
+picnic:пикник
+camping:кемпинг
+barbecue:барбекю
+reception:прием
+gathering:сбор
+get-together:встреча
+networking:нетворкинг
+invitation:приглашение
+host:хозяин

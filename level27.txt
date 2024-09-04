@@ -1,0 +1,48 @@
+soccer:футбол
+basketball:баскетбол
+tennis:теннис
+baseball:бейсбол
+volleyball:волейбол
+golf:гольф
+hockey:хоккей
+swimming:плавание
+running:бег
+cycling:велосипедный спорт
+skiing:лыжный спорт
+snowboarding:сноубординг
+surfing:серфинг
+skateboarding:скейтбординг
+fishing:рыбалка
+hiking:поход
+camping:кемпинг
+climbing:скалолазание
+dancing:танцы
+yoga:йога
+gymnastics:гимнастика
+karate:карате
+judo:дзюдо
+boxing:бокс
+wrestling:борьба
+archery:стрельба из лука
+fencing:фехтование
+rowing:гребля
+sailing:парусный спорт
+diving:дайвинг
+equestrian:конный спорт
+badminton:бадминтон
+table tennis:настольный теннис
+cricket:крикет
+rugby:регби
+lacrosse:лакросс
+field hockey:хоккей на траве
+ice skating:катание на коньках
+figure skating:фигурное катание
+billiards:бильярд
+chess:шахматы
+bowling:боулинг
+darts:дартс
+gym:спортзал
+workout:тренировка
+exercise:упражнение
+jumping:прыжки
+throwing:метание

@@ -1,0 +1,40 @@
+good morning:доброе утро
+good night:спокойной ночи
+thank you very much:большое спасибо
+you're welcome:пожалуйста
+how are you doing:как у вас дела
+what's your name:как вас зовут
+nice to meet you:приятно познакомиться
+have a nice day:хорошего дня
+have a good time:хорошо провести время
+excuse me please:извините, пожалуйста
+sorry i'm late:извините за опоздание
+i don't understand:я не понимаю
+can you help me:вы можете мне помочь
+i love you so:я так вас люблю
+how much is this:сколько это стоит
+i want to eat:я хочу поесть
+i need to sleep:мне нужно спать
+i like to read:мне нравится читать
+i want to watch:я хочу посмотреть
+please wait a moment:подождите, пожалуйста
+i'm sorry:извините
+let's go:пойдём
+how old are you:сколько вам лет
+where are you from:откуда вы
+what time is it:сколько времени
+i'm hungry:я голоден
+i'm thirsty:я хочу пить
+i'm tired:я устал
+i'm cold:мне холодно
+i'm hot:мне жарко
+it's delicious:это вкусно
+it's beautiful:это красиво
+it's difficult:это сложно
+it's easy:это легко
+i'm lost:я потерялся
+where is the bathroom:где ванная
+how do you say this in russian:как это сказать по-русски
+what's the weather like:какая погода
+i miss you:я скучаю по тебе
+i'm sorry for your loss:мои соболезнования

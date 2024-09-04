@@ -1,0 +1,30 @@
+chair:стул
+table:стол
+sofa:диван
+bed:кровать
+lamp:лампа
+desk:письменный стол
+shelf:полка
+cabinet:шкаф
+drawer:ящик
+wardrobe:гардероб
+mirror:зеркало
+carpet:ковер
+curtain:занавеска
+cushion:подушка
+blanket:одеяло
+pillow:подушка
+rug:коврик
+vase:ваза
+frame:рамка
+picture:картина
+clock:часы
+chandelier:люстра
+bookcase:книжный шкаф
+dressing table:туалетный столик
+bench:скамейка
+stool:табурет
+fireplace:камин
+ottoman:пуфик
+headboard:изголовье
+coffee table:кофейный столик

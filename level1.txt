@@ -1,0 +1,10 @@
+hello:привет
+world:мир
+friend:друг
+love:любовь
+peace:мир
+sun:солнце
+moon:луна
+star:звезда
+sky:небо
+water:вода

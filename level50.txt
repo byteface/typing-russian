@@ -1,0 +1,30 @@
+craft:ремесло
+art:искусство
+create:создавать
+design:дизайн
+paint:рисовать
+draw:рисовать
+sketch:скетч
+sculpture:скульптура
+pottery:гончарное дело
+knitting:вязание
+crochet:вязание крючком
+sewing:шитье
+embroidery:вышивка
+quilting:пэчворк
+origami:оригами
+calligraphy:каллиграфия
+woodworking:обработка дерева
+metalworking:обработка металла
+glassblowing:дутье стекла
+ceramics:керамика
+jewelry making:изготовление украшений
+paper craft:бумажное ремесло
+modeling:моделирование
+photography:фотография
+canvas:холст
+palette:палитра
+brush:кисть
+clay:глина
+metal:металл
+thread:нить

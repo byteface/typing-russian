@@ -1,0 +1,40 @@
+hospital:больница
+school:школа
+university:университет
+restaurant:ресторан
+cafe:кафе
+supermarket:супермаркет
+store:магазин
+mall:торговый центр
+library:библиотека
+bank:банк
+post office:почта
+police station:полицейский участок
+fire station:пожарная станция
+church:церковь
+temple:храм
+mosque:мечеть
+synagogue:синагога
+theater:театр
+cinema:кинотеатр
+museum:музей
+gallery:галерея
+park:парк
+garden:сад
+zoo:зоопарк
+aquarium:аквариум
+gym:спортзал
+stadium:стадион
+arena:арена
+swimming pool:бассейн
+airport:аэропорт
+train station:вокзал
+bus station:автовокзал
+subway:метро
+hotel:отель
+hostel:хостел
+apartment:квартира
+house:дом
+office:офис
+factory:фабрика
+warehouse:склад

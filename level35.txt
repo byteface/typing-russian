@@ -1,0 +1,31 @@
+cook:готовить
+bake:печь
+fry:жарить
+boil:варить
+grill:гриль
+stir:мешать
+chop:рубить
+slice:резать
+peel:чистить
+mix:смешивать
+blend:смешивать
+whisk:взбивать
+serve:подавать
+knife:нож
+fork:вилка
+spoon:ложка
+plate:тарелка
+bowl:миска
+pan:сковорода
+pot:кастрюля
+oven:духовка
+stove:плита
+microwave:микроволновка
+toaster:тостер
+blender:блендер
+mixer:миксер
+kettle:чайник
+cutting board:разделочная доска
+recipe:рецепт
+ingredient:ингредиент
+measuring cup:мерная чашка

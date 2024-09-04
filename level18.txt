@@ -1,0 +1,48 @@
+hobby:хобби
+interest:интерес
+sports:спорт
+game:игра
+reading:чтение
+writing:письмо
+painting:рисование
+drawing:чертеж
+photography:фотография
+music:музыка
+singing:пение
+dancing:танцы
+playing instruments:игра на инструментах
+guitar:гитара
+piano:пианино
+violin:скрипка
+drums:барабаны
+cooking:готовка
+baking:выпечка
+gardening:садоводство
+fishing:рыбалка
+hiking:пеший туризм
+camping:кемпинг
+traveling:путешествие
+collecting:коллекционирование
+stamps:марки
+coins:монеты
+cards:карты
+knitting:вязание
+sewing:шитье
+gaming:игры
+video games:видеоигры
+board games:настольные игры
+puzzles:головоломки
+chess:шахматы
+exercise:упражнения
+yoga:йога
+meditation:медитация
+volunteering:волонтерство
+bird watching:наблюдение за птицами
+model building:моделирование
+scrapbooking:скрапбукинг
+crafting:рукоделие
+blogging:ведение блога
+vlogging:видеоблог
+photography:фотография
+filmmaking:кинопроизводство
+podcasting:подкастинг

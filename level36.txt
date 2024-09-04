@@ -1,0 +1,30 @@
+star:звезда
+planet:планета
+moon:луна
+sun:солнце
+galaxy:галактика
+comet:комета
+asteroid:астероид
+meteor:метеор
+space:космос
+universe:вселенная
+telescope:телескоп
+astronaut:астронавт
+spaceship:космический корабль
+rocket:ракета
+orbit:орбита
+gravity:гравитация
+black hole:черная дыра
+nebula:туманность
+satellite:спутник
+eclipse:затмение
+constellation:созвездие
+light year:световой год
+milky way:млечный путь
+big bang:большой взрыв
+space station:космическая станция
+launch:запуск
+solar system:солнечная система
+asteroid belt:пояс астероидов
+dwarf planet:карликовая планета
+observatory:обсерватория

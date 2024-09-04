@@ -1,0 +1,31 @@
+birthday:день рождения
+wedding:свадьба
+Christmas:Рождество
+Easter:Пасха
+New Year:Новый год
+Thanksgiving:День благодарения
+Halloween:Хэллоуин
+anniversary:годовщина
+festival:фестиваль
+celebration:празднование
+holiday:праздник
+party:вечеринка
+ceremony:церемония
+fireworks:фейерверк
+parade:парад
+feast:пир
+gathering:собрание
+gift:подарок
+greeting:поздравление
+invitation:приглашение
+tradition:традиция
+costume:костюм
+carnival:карнавал
+dance:танец
+ball:бал
+masquerade:маскарад
+reunion:встреча
+anniversary:годовщина
+toast:тост
+ring:кольцо
+cake:торт
