@@ -7,7 +7,7 @@ const levelSelect = document.getElementById('level-select');
 const wordCountElement = document.getElementById('word-count');
 const warningsElement = document.getElementById('warnings');
 const pausePlayButton = document.getElementById('pause-play-btn');
-
+const wpmElement = document.getElementById('wpm');
 
 let wordsData = {};
 let words = [];
@@ -17,6 +17,16 @@ let timeLeft = 60;
 let timer;
 let isPaused = false;
 let currentLetterIndex = 0; // Track current position in word
+
+// tracking accuracy
+let totalAttempts = 0;
+let correctAttempts = 0;
+const accuracyElement = document.getElementById('accuracy');
+
+// tracking wpm
+let wordsTyped = 0;
+let startTime;
+
 
 
 async function loadWords(level) {
@@ -41,6 +51,16 @@ async function loadWords(level) {
 function startGame() {
     score = 0;
     timeLeft = 600;
+
+    // reset accuracy
+    totalAttempts = 0;
+    correctAttempts = 0;
+    accuracyElement.textContent = '100%';
+
+    // reset wpm
+    wordsTyped = 0;
+    startTime = Date.now();
+
     scoreElement.textContent = score;
     timerElement.textContent = timeLeft;
     inputElement.disabled = false;
@@ -58,6 +78,11 @@ function updateTimer() {
         inputElement.disabled = true;
         alert('Time is up! Your score is ' + score);
     }
+
+    // Calculate WPM
+    // const totalTimeInMinutes = (600 - timeLeft) / 60;
+    // const wpm = (wordsTyped / totalTimeInMinutes).toFixed(2);
+    // wpmElement.textContent = `WPM: ${wpm}`;
 }
 
 function showNextWord() {
@@ -118,22 +143,35 @@ function detectKeyboardLayout(typedValue) {
 
 
 inputElement.addEventListener('input', () => {
-    const typedValue = inputElement.value.trim();
+    const typedValue = inputElement.value.trim();  // TODO - bug with spaces in words on detect keyboard
     const currentEnglishWord = words[currentWordIndex];
     const currentRussianWord = wordsData[currentEnglishWord];
     
     detectKeyboardLayout(typedValue);
 
+    // accuracy rating
+    totalAttempts++;
+
     // only allows the correct letter to be typed
     if (currentRussianWord.startsWith(typedValue)) {
         currentLetterIndex = typedValue.length;
+
+        if (typedValue === currentRussianWord.substring(0, typedValue.length)) {
+            correctAttempts++; // Increment correct attempts
+        }
+
     } else {
         inputElement.value = currentRussianWord.substring(0, currentLetterIndex);
     }
 
+    // update accuracy display
+    const accuracy = totalAttempts > 0 ? Math.round((correctAttempts / totalAttempts) * 100) : 100;
+    window.console.log(totalAttempts, correctAttempts);
+    accuracyElement.textContent = `${accuracy}%`;
 
     if (typedValue === currentRussianWord) {
         score++;
+        wordsTyped++;
         scoreElement.textContent = score;
 
         // Remove the word from the array to prevent repetition
