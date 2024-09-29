@@ -4,6 +4,7 @@ const russianWordElement = document.getElementById('russian-word');
 const englishWordElement = document.getElementById('english-word');
 const inputElement = document.getElementById('input');
 const levelSelect = document.getElementById('level-select');
+const wordCountElement = document.getElementById('word-count');
 
 
 let wordsData = {};
@@ -28,6 +29,7 @@ async function loadWords(level) {
             }
         });
         words = Object.keys(wordsData);
+        wordCountElement.textContent = words.length; // Set the initial word count
         startGame();
     } catch (error) {
         console.error('Error loading words:', error);
@@ -57,6 +59,23 @@ function updateTimer() {
 }
 
 function showNextWord() {
+
+    // removes words that have been typed already. progress to next level if all words are done
+    if (words.length === 0) {
+        clearInterval(timer);
+        alert('Congratulations! You completed this level.');
+        // Redirect to next level or handle level completion
+        let nextLevelIndex = levelSelect.selectedIndex + 1;
+        if (nextLevelIndex < levelSelect.options.length) {
+            levelSelect.selectedIndex = nextLevelIndex;
+            loadWords(levelSelect.value);
+        } else {
+            alert('You completed all levels!');
+            // Optional: Handle what happens when all levels are completed
+        }
+        return;
+    }
+
     currentWordIndex = Math.floor(Math.random() * words.length);
     const englishWord = words[currentWordIndex];
     const russianWord = wordsData[englishWord];
@@ -76,6 +95,7 @@ function speakWord(word) {
     window.speechSynthesis.speak(utterance);
 }
 
+
 inputElement.addEventListener('input', () => {
     const typedValue = inputElement.value.trim();
     const currentEnglishWord = words[currentWordIndex];
@@ -84,12 +104,17 @@ inputElement.addEventListener('input', () => {
     if (typedValue === currentRussianWord) {
         score++;
         scoreElement.textContent = score;
+
+        // Remove the word from the array to prevent repetition
+        words.splice(currentWordIndex, 1);
+        wordCountElement.textContent = words.length; // Update the word count
+
         showNextWord();
     } else {
-        // Highlight the next letter
+        // Highlight next letter
         if (typedValue === currentRussianWord.substring(0, typedValue.length)) {
-            currentLetterIndex = typedValue.length; // Update current position
-            highlightNextLetter(currentRussianWord[currentLetterIndex]); // Highlight next letter
+            currentLetterIndex = typedValue.length;
+            highlightNextLetter(currentRussianWord[currentLetterIndex]);
         } else {
             removeHighlightNextKey(); // If typing is wrong, remove the highlight
         }
