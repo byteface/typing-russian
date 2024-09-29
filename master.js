@@ -101,6 +101,15 @@ inputElement.addEventListener('input', () => {
     const currentEnglishWord = words[currentWordIndex];
     const currentRussianWord = wordsData[currentEnglishWord];
     
+
+    // only allows the correct letter to be typed
+    if (currentRussianWord.startsWith(typedValue)) {
+        currentLetterIndex = typedValue.length;
+    } else {
+        inputElement.value = currentRussianWord.substring(0, currentLetterIndex);
+    }
+
+
     if (typedValue === currentRussianWord) {
         score++;
         scoreElement.textContent = score;
