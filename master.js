@@ -6,6 +6,7 @@ const inputElement = document.getElementById('input');
 const levelSelect = document.getElementById('level-select');
 const wordCountElement = document.getElementById('word-count');
 const warningsElement = document.getElementById('warnings');
+const pausePlayButton = document.getElementById('pause-play-btn');
 
 
 let wordsData = {};
@@ -14,7 +15,7 @@ let currentWordIndex = 0;
 let score = 0;
 let timeLeft = 60;
 let timer;
-
+let isPaused = false;
 let currentLetterIndex = 0; // Track current position in word
 
 
@@ -210,6 +211,24 @@ if (hash) {
 
 // Load initial level
 loadWords(levelSelect.value);
+
+
+function togglePausePlay() {
+    if (isPaused) {
+        // Resume the game
+        timer = setInterval(updateTimer, 1000);
+        inputElement.disabled = false;
+        pausePlayButton.textContent = '⏸️'; // Change button to pause icon
+    } else {
+        // Pause the game
+        clearInterval(timer);
+        inputElement.disabled = true;
+        pausePlayButton.textContent = '▶️'; // Change button to play icon
+    }
+    isPaused = !isPaused; // Toggle the pause state
+}
+pausePlayButton.addEventListener('click', togglePausePlay);
+
 
 
 // keyboard --------
