@@ -18,7 +18,8 @@
     <div class="col">
         <div class="container">
             <div style="color:red;"><span id="warnings"></span></div>
-            <h1>🇷🇺 Russian Touch Typing Game</h1>
+            <h1 id="page-title">🇷🇺 </h1>
+            <!-- <span id="cursor">|</span> -->
             <p>Learn new Russian words while typing!</p>
         </div>
 
@@ -95,7 +96,7 @@
                 <span id="russian-word"></span> - <span id="english-word"></span>
                 <!-- <span class="sound-icon" id="soundIcon">🔊</span> -->
             </div>
-            <input type="text" id="input" placeholder="Start typing..." disabled autofocus>
+            <input type="text" id="input" placeholder="Start typing..." disabled autofocus autocomplete="off">
         </div>
 
 
@@ -103,43 +104,44 @@
 
             <div class="keyboard">
                 <div class="row">
-                    <div class="key" data-char="й">й</div>
-                    <div class="key" data-char="ц">ц</div>
-                    <div class="key" data-char="у">у</div>
-                    <div class="key" data-char="к">к</div>
-                    <div class="key" data-char="е">е</div>
-                    <div class="key" data-char="н">н</div>
-                    <div class="key" data-char="г">г</div>
-                    <div class="key" data-char="ш">ш</div>
-                    <div class="key" data-char="щ">щ</div>
-                    <div class="key" data-char="з">з</div>
-                    <div class="key" data-char="х">х</div>
-                    <div class="key" data-char="ъ">ъ</div>
+                    <div class="key" data-char="й">й <span class="small-char">q</span></div>
+                    <div class="key" data-char="ц">ц <span class="small-char">w</span></div>
+                    <div class="key" data-char="у">у <span class="small-char">e</span></div>
+                    <div class="key" data-char="к">к <span class="small-char">r</span></div>
+                    <div class="key" data-char="е">е <span class="small-char">t</span></div>
+                    <div class="key" data-char="н">н <span class="small-char">y</span></div>
+                    <div class="key" data-char="г">г <span class="small-char">u</span></div>
+                    <div class="key" data-char="ш">ш <span class="small-char">i</span></div>
+                    <div class="key" data-char="щ">щ <span class="small-char">o</span></div>
+                    <div class="key" data-char="з">з <span class="small-char">p</span></div>
+                    <div class="key" data-char="х">х <span class="small-char">[</span></div>
+                    <div class="key" data-char="ъ">ъ <span class="small-char">]</span></div>
                 </div>
                 <div class="row">
-                    <div class="key" data-char="ф">ф</div>
-                    <div class="key" data-char="ы">ы</div>
-                    <div class="key" data-char="в">в</div>
-                    <div class="key" data-char="а">а</div>
-                    <div class="key" data-char="п">п</div>
-                    <div class="key" data-char="р">р</div>
-                    <div class="key" data-char="о">о</div>
-                    <div class="key" data-char="л">л</div>
-                    <div class="key" data-char="д">д</div>
-                    <div class="key" data-char="ж">ж</div>
-                    <div class="key" data-char="э">э</div>
+                    <div class="key" data-char="ф">ф <span class="small-char">a</span></div>
+                    <div class="key" data-char="ы">ы <span class="small-char">s</span></div>
+                    <div class="key" data-char="в">в <span class="small-char">d</span></div>
+                    <div class="key" data-char="а">а <span class="small-char">f</span></div>
+                    <div class="key" data-char="п">п <span class="small-char">g</span></div>
+                    <div class="key" data-char="р">р <span class="small-char">h</span></div>
+                    <div class="key" data-char="о">о <span class="small-char">j</span></div>
+                    <div class="key" data-char="л">л <span class="small-char">k</span></div>
+                    <div class="key" data-char="д">д <span class="small-char">l</span></div>
+                    <div class="key" data-char="ж">ж <span class="small-char">;</span></div>
+                    <div class="key" data-char="э">э <span class="small-char">'</span></div>
+                    <div class="key" data-char="ё">ё <span class="small-char">\</span></div>
                 </div>
                 <div class="row">
-                    <div class="key" data-char="я">я</div>
-                    <div class="key" data-char="ч">ч</div>
-                    <div class="key" data-char="с">с</div>
-                    <div class="key" data-char="м">м</div>
-                    <div class="key" data-char="и">и</div>
-                    <div class="key" data-char="т">т</div>
-                    <div class="key" data-char="ь">ь</div>
-                    <div class="key" data-char="б">б</div>
-                    <div class="key" data-char="ю">ю</div>
-                    <div class="key" data-char=".">.</div>
+                    <div class="key" data-char="я">я <span class="small-char">z</span></div>
+                    <div class="key" data-char="ч">ч <span class="small-char">x</span></div>
+                    <div class="key" data-char="с">с <span class="small-char">c</span></div>
+                    <div class="key" data-char="м">м <span class="small-char">v</span></div>
+                    <div class="key" data-char="и">и <span class="small-char">b</span></div>
+                    <div class="key" data-char="т">т <span class="small-char">n</span></div>
+                    <div class="key" data-char="ь">ь <span class="small-char">m</span></div>
+                    <div class="key" data-char="б">б <span class="small-char">,</span></div>
+                    <div class="key" data-char="ю">ю <span class="small-char">.</span></div>
+                    <div class="key" data-char=".">. <span class="small-char">/</span></div>
                 </div>
             </div>
         </div>
@@ -155,8 +157,31 @@
         </a>
     </footer>
 
-      <!-- load the game script -->
-      <script type="text/javascript" src="master.js"></script>
+
+    <script>
+        const title = "Russian Touch Typing Game!";
+        const pageTitleElement = document.getElementById('page-title');
+        // const cursorElement = document.getElementById('cursor');
+        let currentIndex = 0;
+
+        function typeTitle() {
+            if (currentIndex < title.length) {
+                pageTitleElement.textContent += title[currentIndex];
+                currentIndex++;
+                setTimeout(typeTitle, 100); // Speed of typing (100ms per letter)
+            // } else {
+                // cursorElement.style.display = 'none'; // Hide cursor once typing is done
+            }
+        }
+
+        // Start typing effect when the page loads
+        window.onload = function() {
+            typeTitle();
+        };    
+    </script>
+
+    <!-- load the game script -->
+    <script type="text/javascript" src="master.js"></script>
 
 </body>
 </html>

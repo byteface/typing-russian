@@ -143,7 +143,7 @@ function detectKeyboardLayout(typedValue) {
 
 
 inputElement.addEventListener('input', () => {
-    const typedValue = inputElement.value.trim();  // TODO - bug with spaces in words on detect keyboard
+    const typedValue = inputElement.value.trim();  // TODO - bug with spaces in words on detect keyboard << NOT THIS
     const currentEnglishWord = words[currentWordIndex];
     const currentRussianWord = wordsData[currentEnglishWord];
     
@@ -166,7 +166,7 @@ inputElement.addEventListener('input', () => {
 
     // update accuracy display
     const accuracy = totalAttempts > 0 ? Math.round((correctAttempts / totalAttempts) * 100) : 100;
-    window.console.log(totalAttempts, correctAttempts);
+    // window.console.log(totalAttempts, correctAttempts);
     accuracyElement.textContent = `${accuracy}%`;
 
     if (typedValue === currentRussianWord) {
@@ -230,7 +230,7 @@ levelSelect.addEventListener('change', () => {
 // if the url hash has a level option set
 const hash = decodeURIComponent(window.location.hash.substr(1)).toLowerCase(); // Remove the '#'
 // console.log("hurray!")
-console.log(hash)
+// console.log(hash)
 if (hash) {
     for (let i = 0; i < levelSelect.options.length; i++) {
         const optionText = levelSelect.options[i].textContent.trim().toLowerCase();
@@ -239,7 +239,7 @@ if (hash) {
         // Compare option text before colon with hash
         const optionTextBeforeColon = optionText.substring(0, colonIndex).trim();
         
-        window.console.log(optionTextBeforeColon , hash)
+        // window.console.log(optionTextBeforeColon , hash)
         if (optionTextBeforeColon === hash) {
             levelSelect.selectedIndex = i;
             break;
@@ -291,13 +291,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const keyMap = {
         'й': 'q', 'ц': 'w', 'у': 'e', 'к': 'r', 'е': 't', 'н': 'y', 'г': 'u', 'ш': 'i', 'щ': 'o', 'з': 'p', 'х': '[', 'ъ': ']',
-        'ф': 'a', 'ы': 's', 'в': 'd', 'а': 'f', 'п': 'g', 'р': 'h', 'о': 'j', 'л': 'k', 'д': 'l', 'ж': ';', 'э': '\'',
+        'ф': 'a', 'ы': 's', 'в': 'd', 'а': 'f', 'п': 'g', 'р': 'h', 'о': 'j', 'л': 'k', 'д': 'l', 'ж': ';', 'э': '\'', 'ё': '\\',
         'я': 'z', 'ч': 'x', 'с': 'c', 'м': 'v', 'и': 'b', 'т': 'n', 'ь': 'm', 'б': ',', 'ю': '.', '.': '/'
     };
 
     // Highlight key on virtual keyboard
     function highlightKey(char) {
-        window.console.log('highlights')
+        // window.console.log('highlights')
         keys.forEach(key => {
             if (key.dataset.char === char) {
                 key.classList.add('highlight');
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Remove highlight from all keys
     function removeHighlight() {
-        window.console.log('remove highlights')
+        // window.console.log('remove highlights')
         keys.forEach(key => {
             key.classList.remove('highlight');
         });
@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Map physical key press to virtual keyboard key
     document.addEventListener('keydown', (event) => {
-        window.console.log('KEYDOWN')
+        // window.console.log('KEYDOWN')
         removeHighlight();
         window.console.log(event.key);
         // const keyChar = Object.keys(keyMap).find(key => keyMap[key] === event.key);
