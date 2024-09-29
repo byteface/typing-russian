@@ -5,6 +5,7 @@ const englishWordElement = document.getElementById('english-word');
 const inputElement = document.getElementById('input');
 const levelSelect = document.getElementById('level-select');
 const wordCountElement = document.getElementById('word-count');
+const warningsElement = document.getElementById('warnings');
 
 
 let wordsData = {};
@@ -96,11 +97,31 @@ function speakWord(word) {
 }
 
 
+
+const russianCharacters = new Set('йцукенгшщзфывапролджэячсмитьбюё');
+
+function detectKeyboardLayout(typedValue) {
+    // Check if all characters in the typed value are Russian characters
+    for (let char of typedValue) {
+        if (!russianCharacters.has(char)) {
+            // alert('Please switch to the Russian keyboard layout!');
+            // return false;
+            warningsElement.textContent = '⚠️ You may need to switch to the Russian keyboard layout';
+            return false;
+        }
+    }
+    // return true;
+    warningsElement.textContent = "";
+    return true;
+}
+
+
 inputElement.addEventListener('input', () => {
     const typedValue = inputElement.value.trim();
     const currentEnglishWord = words[currentWordIndex];
     const currentRussianWord = wordsData[currentEnglishWord];
     
+    detectKeyboardLayout(typedValue);
 
     // only allows the correct letter to be typed
     if (currentRussianWord.startsWith(typedValue)) {

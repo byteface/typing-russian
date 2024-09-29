@@ -64,7 +64,8 @@ col {
 }
 
 .key:active, .key.highlight {
-    background-color: #b0c4de;
+    /* background-color: #b0c4de; */
+    border: 1px solid #000000;
 }
 
 .key.next {

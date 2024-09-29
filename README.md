@@ -26,4 +26,9 @@ p.s. you will need to setup the Russian keyboard on your computer of course.
 tip: learn the shortcut on your OS to switch keyboard language.
 
 
+## Play online now
+
+<a href="http://typing.eventual.technology/">Play the Russian touch typing game online</a>
+
+
 наслаждаться!

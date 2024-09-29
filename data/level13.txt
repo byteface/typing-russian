@@ -26,11 +26,11 @@ joystick:джойстик
 drone:дрон
 smartwatch:умные часы
 fitness tracker:фитнес трекер
-e-reader:электронная книга
+e reader:электронная книга
 vr headset:vr гарнитура
 3d printer:3d принтер
 bluetooth:блютуз
-wi-fi:вайфай
+wi fi:вайфай
 internet:интернет
 website:вебсайт
 email:электронная почта

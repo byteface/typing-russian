@@ -7,7 +7,7 @@ steaming:парение
 frying:жарка
 sauteing:тушение
 simmering:тушение
-stir-frying:жарка с перемешиванием
+stir frying:жарка с перемешиванием
 chopping:нарезка
 slicing:нарезка
 dicing:нарезка кубиками

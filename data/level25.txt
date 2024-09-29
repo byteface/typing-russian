@@ -13,9 +13,9 @@ silver:серебристый
 gold:золотой
 beige:бежевый
 maroon:бордовый
-navy:темно-синий
+navy:темно синий
 turquoise:бирюзовый
-teal:темно-бирюзовый
+teal:темно бирюзовый
 lavender:лавандовый
 violet:фиолетовый
 indigo:индиго

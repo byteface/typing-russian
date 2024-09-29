@@ -1,6 +1,6 @@
 social media:социальные сети
 internet:интернет
-website:веб-сайт
+website:веб сайт
 blog:блог
 vlog:влог
 post:пост

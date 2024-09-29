@@ -32,7 +32,7 @@ salad:салат
 sandwich:бутерброд
 pizza:пицца
 hamburger:гамбургер
-hot dog:хот-дог
+hot dog:хот дог
 sausage:колбаса
 bacon:бекон
 butter:масло

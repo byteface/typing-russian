@@ -11,7 +11,7 @@ firefighter:пожарный
 soldier:солдат
 pilot:пилот
 driver:водитель
-chef:шеф-повар
+chef:шеф повар
 cook:повар
 waiter:официант
 waitress:официантка

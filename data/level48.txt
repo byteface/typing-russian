@@ -21,10 +21,10 @@ barbell:штанга
 treadmill:беговая дорожка
 elliptical:эллиптический тренажер
 squat:приседание
-push-up:отжимание
-sit-up:скручивание
+push up:отжимание
+sit up:скручивание
 plank:планка
 stretch:растяжка
-warm-up:разминка
-cool-down:заминка
+warm up:разминка
+cool down:заминка
 trainer:тренер

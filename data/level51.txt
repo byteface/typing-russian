@@ -34,7 +34,7 @@ it's difficult:это сложно
 it's easy:это легко
 i'm lost:я потерялся
 where is the bathroom:где ванная
-how do you say this in russian:как это сказать по-русски
+how do you say this in russian:как это сказать по русски
 what's the weather like:какая погода
 i miss you:я скучаю по тебе
 i'm sorry for your loss:мои соболезнования

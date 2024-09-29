@@ -19,13 +19,13 @@ banquet:банкет
 reunion:воссоединение
 fundraiser:благотворительный вечер
 ball:бал
-gala:гала-вечер
+gala:гала вечер
 picnic:пикник
 camping:кемпинг
 barbecue:барбекю
 reception:прием
 gathering:сбор
-get-together:встреча
+get together:встреча
 networking:нетворкинг
 invitation:приглашение
 host:хозяин

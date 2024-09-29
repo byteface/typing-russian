@@ -1,5 +1,5 @@
 shirt:рубашка
-t-shirt:футболка
+t shirt:футболка
 sweater:свитер
 jacket:куртка
 coat:пальто

@@ -75,7 +75,7 @@ sturgeon:осетр
 eel:угорь
 shark:акула
 marlin:марлин
-swordfish:рыба-меч
+swordfish:рыба меч
 octopus:осьминог
 squid:кальмар
 cuttlefish:каракатица
