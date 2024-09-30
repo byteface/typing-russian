@@ -178,6 +178,9 @@ inputElement.addEventListener('input', () => {
         words.splice(currentWordIndex, 1);
         wordCountElement.textContent = words.length; // Update the word count
 
+        const level = levelSelect.value.match(/\d+/)[0]; // extract the number of the current level
+        savePersonalBest( level, 600 - timeLeft, score, words.length, accuracy)
+
         showNextWord();
     } else {
         // Highlight next letter
@@ -223,7 +226,12 @@ levelSelect.addEventListener('change', () => {
     inputElement.disabled = true;
     loadWords(levelSelect.value);
 
+    // set the window location for deeplinking into a given level
     window.location.hash = `level ${levelSelect.value.split('.')[0].replace('level', '')}`;
+
+    // Update personal bests for the selected level
+    const level = levelSelect.value.match(/\d+/)[0]; // extract the number of the current level
+    loadPersonalBests(level);
 });
 
 
@@ -267,6 +275,94 @@ function togglePausePlay() {
 }
 pausePlayButton.addEventListener('click', togglePausePlay);
 
+
+
+// STORING PERSONAL BESTS ------
+
+function savePersonalBest(level, time, score, wordsLeft, accuracy) {
+    let personalBests = JSON.parse(localStorage.getItem('personalBests')) || {};
+    
+    if (!personalBests[level]) {
+        personalBests[level] = [];
+    }
+
+    const newRecord = { time, score, wordsLeft, accuracy };
+
+    // Check if this is better than the current best
+    const currentBest = personalBests[level][0];  // Assuming best scores are sorted at index 0
+
+    if (!currentBest || isBetterScore(newRecord, currentBest)) {
+        // Add the new score as the best and sort the array
+        personalBests[level].unshift(newRecord);  // Add to the front of the list
+        personalBests[level] = personalBests[level].slice(0, 1);  // Keep only top 1 score
+        
+        // Save back to localStorage
+        localStorage.setItem('personalBests', JSON.stringify(personalBests));
+    }
+}
+
+// Higher score is better.
+// If scores are tied, fewer words left is better.
+// If both score and words left are the same, higher accuracy is better.
+// If all of the above are the same, faster time is better.
+function isBetterScore(newRecord, currentBest) {
+    if (newRecord.score > currentBest.score) {
+        return true;
+    } else if (newRecord.score === currentBest.score) {
+        if (newRecord.wordsLeft < currentBest.wordsLeft) {
+            return true;
+        } else if (newRecord.wordsLeft === currentBest.wordsLeft) {
+            if (newRecord.accuracy > currentBest.accuracy) {
+                return true;
+            } else if (newRecord.accuracy === currentBest.accuracy) {
+                return newRecord.time < currentBest.time;  // Faster time is better
+            }
+        }
+    }
+    return false;
+}
+
+function loadPersonalBests(level) {
+    const personalBests = JSON.parse(localStorage.getItem('personalBests')) || {};
+    const bests = personalBests[level] || [];
+    const previousScoresDiv = document.getElementById('previous-scores');
+    
+    // Clear previous contents
+    previousScoresDiv.innerHTML = '';
+
+    if (bests.length === 0) {
+        previousScoresDiv.innerHTML = '<p>No previous scores for this level.</p>';
+    } else {
+        bests.forEach((record, index) => {
+            const scoreHTML = `
+                <div>
+                    <h5>Personal Best for this level:</h5>
+                    <p>Time: ${record.time} | Score: ${record.score} | Words Left: ${record.wordsLeft} | Accuracy: ${record.accuracy}%</p>
+                </div>
+            `;
+            previousScoresDiv.innerHTML += scoreHTML;
+        });
+    }
+}
+
+document.getElementById('medal').addEventListener('click', () => {
+    const previousScoresDiv = document.getElementById('previous-scores');
+    if (previousScoresDiv.style.display === 'none') {
+        previousScoresDiv.style.display = 'block';
+        // loadPersonalBests(levelSelect.value);  // Load bests for the current level
+        const level = levelSelect.value.match(/\d+/)[0]; // extract the number of the current level
+        loadPersonalBests(level);
+    } else {
+        previousScoresDiv.style.display = 'none';
+    }
+});
+
+// levelSelect.addEventListener('change', () => {
+//     // Existing code for handling level change...
+//     loadPersonalBests(levelSelect.value);  // Update personal bests for the selected level
+// });
+
+// END STORING PERSONAL BESTS ------
 
 
 // keyboard --------

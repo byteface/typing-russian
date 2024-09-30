@@ -80,3 +80,16 @@ col {
     font-size: 10px;  /* Make the English letter small */
     color: grey;      /* Optional: Make it a light color */
 }
+
+#personal-best-container {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border: 1px solid #ccc;
+    /* padding: 10px; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Hidden by default */
+    z-index: 100; /* Ensures it appears on top */
+    max-width: 300px;
+    max-height: 200px;
+    overflow-y: auto; /* Scroll if content overflows */
+}
